@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Sistemas</title>
+
+<style>
+:root {
+    --verde: #594078;
+    --verde-claro: #8063A6;
+    --bege: #F3ECF8;
+    --bege-claro: #FAF7FC;
+    --texto: #38313F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bege);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* MENU */
+
+header {
+    background: var(--verde);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #D8C6EB;
+}
+
+/* PERFIL */
+
+.perfil {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+
+.foto-perfil {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 7px solid var(--verde);
+    background: #D8C6EB;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    text-align: center;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-texto {
+    max-width: 550px;
+}
+
+.perfil-texto h1 {
+    font-size: 42px;
+    color: var(--verde);
+    margin-bottom: 10px;
+}
+
+.perfil-texto h3 {
+    color: var(--verde-claro);
+    margin-bottom: 15px;
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 65px 8%;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--verde);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777080;
+}
+
+/* PROJETOS */
+
+.projetos {
+    background: var(--bege-claro);
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.projeto-card {
+    background: var(--bege);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #00000012;
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.capa-projeto {
+    height: 220px;
+    background: #E5D9F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    overflow: hidden;
+}
+
+.capa-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 25px;
+}
+
+.projeto-info h3 {
+    color: var(--verde);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.projeto-info p {
+    color: #625B69;
+}
+
+/* PROFESSOR */
+
+.professor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.foto-professor {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background: #E5D9F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    overflow: hidden;
+}
+
+.foto-professor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.professor-info {
+    max-width: 550px;
+}
+
+.professor-info h2 {
+    color: var(--verde);
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .perfil {
+        text-align: center;
+    }
+
+    .perfil-texto h1 {
+        font-size: 32px;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MEU PORTIFÓLIO</h2>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#professor">Professor</a>
+    </nav>
+</header>
+
+<!-- PERFIL DO ALUNO -->
+
+<section class="perfil" id="inicio">
+
+    <div class="foto-perfil">
+        <img src="C:\Users\vitor\Downloads\WhatsApp Image 2026-11-23 at 20.23.42.jpeg" alt="Foto do aluno">
+    </div>
+
+    <div class="perfil-texto">
+        <h1>Vitória</h1>
+
+        <h3>Estudante de Desenvolvimento de Sistemas</h3>
+
+        <p>
+            Sou estudante do curso de Sistemas e este espaço
+            foi criado para apresentar um pouco da minha
+            trajetória acadêmica, meus conhecimentos e os
+            projetos desenvolvidos durante o curso.
+        </p>
+
+        <p>
+            Ao longo dessa jornada, tenho aprendido sobre
+            tecnologia, programação, inovação e desenvolvimento
+            de soluções para diferentes necessidades de forma criativa.
+        </p>
+    </div>
+
+</section>
+
+<!-- PROJETOS -->
+
+<section class="projetos" id="projetos">
+
+    <h2 class="titulo">Meus Projetos</h2>
+
+    <p class="subtitulo">
+        Conheça alguns dos meus projetos desenvolvidos durante o curso.
+    </p>
+
+    <div class="projetos-container">
+
+        <!-- PROJETO 1 -->
+
+        <div class="projeto-card">
+            <div class="capa-projeto">
+                <img src="https://th.bing.com/th/id/R.1461d1eced5892431a6eb67d305694c7?rik=Asre%2fvFb9mGenw&riu=http%3a%2f%2fs2.glbimg.com%2fe10mqOq9348FPrhlUTyOgqncp4s%3d%2f1200x630%2fs.glbimg.com%2fjo%2fg1%2ff%2foriginal%2f2012%2f11%2f18%2fcharlie_brow_jr_divulgacao.jpg&ehk=CvlpNWpYgzV%2b4eBYIqIy283gGyyxD%2bIrm5O3S7%2fDbZw%3d&risl=&pid=ImgRaw&r=0" alt="Capa do projeto 1">
+            </div>
+
+            <div class="projeto-info">
+                <h3>- Charlie Brow Jr</h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- PROJETO 2 -->
+
+        <div class="projeto-card">
+            <div class="capa-projeto">
+                <img src="https://occ-0-3011-116.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABegKrvKk6xSPjRB3xULrR7smkeT-j9WRASWE55g7DrVYxF8Lml5d15bCEmpoEUEufxBgcU2_WgZr0FX9gndmeVtvlnBkZYtvIjYk.jpg?r=1e8" alt="Capa do projeto 2">
+            </div>
+
+            <div class="projeto-info">
+                <h3>- O Diário de Uma Paixão</h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- PROJETO 3 -->
+
+        <div class="projeto-card">
+            <div class="capa-projeto">
+                <img src="projeto3.jpg" alt="Capa do projeto 3">
+            </div>
+
+            <div class="projeto-info">
+                <h3>- Enrolados</h3>
+                <p>
+                   
+                </p>
+            </div>
+        </div>
+
+        <!-- PROJETO 4 -->
+
+        <div class="projeto-card">
+            <div class="capa-projeto">
+                <img src="projeto4.jpg" alt="Capa do projeto 4">
+            </div>
+
+            <div class="projeto-info">
+                <h3>Projeto 04 - Nome do Projeto</h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROFESSOR -->
+
+<section id="professor">
+
+    <h2 class="titulo">Nosso Professor</h2>
+
+    <p class="subtitulo">
+        Conheça um pouco sobre quem acompanha nossa aprendizagem.
+    </p>
+
+    <div class="professor">
+
+        <div class="foto-professor">
+            <img src="foto-professor.jpg" alt="Foto do professor">
+        </div>
+
+        <div class="professor-info">
+
+            <h2>Sávio Feitosa Mends</h2>
+
+            <p>
+                
+            </p>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RODAPÉ -->
+
+<footer>
+    <p> 2026 - Portfólio Acadêmico | Curso de Sistemas</p>
+
+</footer>
+
+</body>
+</html>
